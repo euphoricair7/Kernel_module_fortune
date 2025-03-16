@@ -1,0 +1,2 @@
+[ 8687.506108] hello_world: loading out-of-tree module taints kernel.
+[ 8687.506115] hello_world: module verification failed: signature and/or required key missing - tainting kernel
