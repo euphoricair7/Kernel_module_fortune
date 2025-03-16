@@ -10,8 +10,8 @@
 #define MAX_MSG_LEN 300
 
 static char *messages[MAX_MSGS];
-static int num_msgs = 10; // Now matches the 10 default messages
-static bool defaults_loaded = false; // Track if defaults are used
+static int num_msgs = 10; 
+static bool defaults_loaded = false; 
 
 static const char *default_messages[] = {
     "You look like you’ve barely slept. Are you okay?",
@@ -43,7 +43,7 @@ static struct kobj_attribute message_attr = __ATTR_RO(message);
 static int __init fortune_init(void) {
     int i;
 
-    // Load defaults only if no parameters provided
+    
     if (num_msgs == 10) {
         for (i = 0; i < num_msgs; i++) {
             messages[i] = kstrdup(default_messages[i], GFP_KERNEL);
@@ -52,10 +52,10 @@ static int __init fortune_init(void) {
                 return -ENOMEM;
             }
         }
-        defaults_loaded = true; // Mark defaults as loaded
+        defaults_loaded = true; 
     }
 
-    // Create sysfs entry
+    
     fortune_kobj = kobject_create_and_add("fortunecookie", kernel_kobj);
     if (!fortune_kobj) {
         if (defaults_loaded) {
@@ -79,7 +79,8 @@ static int __init fortune_init(void) {
 static void __exit fortune_exit(void) {
     int i;
 
-    // Free only if defaults were loaded
+    
+    
     if (defaults_loaded) {
         for (i = 0; i < num_msgs; i++) {
             kfree(messages[i]);

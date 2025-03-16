@@ -1,0 +1,8 @@
+[ 2225.592925] sysfs: cannot create duplicate filename '//fortunecookie'
+[ 2225.593363] kobject: kobject_add_internal failed for fortunecookie with -EEXIST, don't try to register things with the same name in the same directory.
+[ 2409.211212] sysfs: cannot create duplicate filename '//fortunecookie'
+[ 2409.211608] kobject: kobject_add_internal failed for fortunecookie with -EEXIST, don't try to register things with the same name in the same directory.
+[ 2558.741204] sysfs: cannot create duplicate filename '//fortunecookie'
+[ 2558.741561] kobject: kobject_add_internal failed for fortunecookie with -EEXIST, don't try to register things with the same name in the same directory.
+[ 3562.652274] sysfs: cannot create duplicate filename '//fortunecookie'
+[ 3562.652788] kobject: kobject_add_internal failed for fortunecookie with -EEXIST, don't try to register things with the same name in the same directory.
