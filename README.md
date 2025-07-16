@@ -1,2 +1,3 @@
-# Kernel_Creation
-Creating my Own Kernel
+# Fortune_Cookie_Kernel
+Creating my Own Kernel, and funny fortune cookies
+
